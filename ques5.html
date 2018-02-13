@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Simple Interest
+</title>
+
+
+
+
+
+<script
+type=”text/javascript” src=”https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js”>
+</script>
+
+
+
+
+
+
+<script>
+
+var obj={name:"chunks",age:22,salary: 15000, dateOfBirth : "26-may-1995"}
+var obj1={name:"chunky",age:15,salary: 1500, dateOfBirth : "26-may-1995"}
+var obj2={name:"prachi",age:26,salary: 500, dateOfBirth : "28-feb-1995"}
+var obj3={name:"sahil",age:17,salary: 2300, dateOfBirth : "06-june-1995"}
+var obj4={name:"megha",age:18,salary: 1900, dateOfBirth : "15-july-1995"}
+var listOfObject=[obj,obj1,obj2,obj3,obj4];
+
+
+
+
+
+for(i=0;i<listOfObject.length;i++){
+
+
+	document.write("name ="+listOfObject[i].name+"</br>");
+	document.write("age ="+listOfObject[i].age+"</br>");
+	document.write("salary ="+listOfObject[i].salary+"</br>");
+	document.write("date of birth ="+listOfObject[i].dateOfBirth+"</br> </br></br>");
+				
+
+}
+
+
+
+
+
+
+
+
+
+
+var filteredSalary=filterSalary(listOfObject);
+salaryIncrement(listOfObject);
+groupAge(listOfObject);
+
+
+
+
+
+function salaryIncrement(listOfObject){
+
+for(i=0;i<listOfObject.length;i++)
+{
+   if(listOfObject[i].salary < 1000  && listOfObject[i].age > 20)
+   {
+    document.write("name ="+listOfObject[i].name+"</br>");
+	document.write("age ="+listOfObject[i].age+"</br>");
+	document.write(" old salary ="+listOfObject[i].salary+"</br>");
+	listOfObject[i].salary=listOfObject[i].salary*5;
+	document.write(" new salary ="+listOfObject[i].salary+"</br>");
+	document.write("date of birth ="+listOfObject[i].dateOfBirth+"</br> </br></br>");
+		
+   }
+{
+}
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+function groupAge(listOfObject){
+
+for(i=0;i<listOfObject.length;i++)
+{
+     if(listOfObject[i].age<20){
+	document.write("age < 20 ="+listOfObject[i].name+"</br>");
+	
+}
+}
+
+document.write("<br/><br/><br/><br/>	");
+for(i=0;i<listOfObject.length;i++)
+{
+if(listOfObject[i].age>20){
+	document.write("age > 20 ="+listOfObject[i].name+"</br>");
+	
+}
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function filterSalary(listOfObject){
+ 
+document.write("Users With Salary GreAter than 5000 </br>")
+for(i=0;i<listOfObject.length;i++)
+{
+   if(listOfObject[i].salary > 5000 )
+{  
+    document.write("name ="+listOfObject[i].name+"</br>");
+	document.write("age ="+listOfObject[i].age+"</br>");
+	document.write("salary ="+listOfObject[i].salary+"</br>");
+	document.write("date of birth ="+listOfObject[i].dateOfBirth+"</br> </br></br>");
+	
+}
+}
+document.write("Thats It </br></br></br></br>")
+}
+
+
+</script>
+</head>
+<body>
+
+<p id="uni">
+<h1> Head Tag</h1>
+<h2> Head Tag</h2>
+</p>
+<p class ="cl">
+<ul>
+<li> lst 1</li>
+<li> lst 2</li>
+</ul>
+</p>
+</body>
+</html>

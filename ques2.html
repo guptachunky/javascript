@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Simple Interest
+</title>
+<script>
+var PalindromeString=new String(prompt("Enter String"));
+var reverse=new String("");
+for(var i=PalindromeString.length-1;i>=0;i--)
+{
+	reverse=reverse+PalindromeString.charAt(i);
+}
+
+document.write(isStringPalindrome(PalindromeString,reverse));
+
+function isStringPalindrome(string1,string2){
+	if(string1 == string2){
+		return string1+"  String Is Palindrome  ";
+	}
+	else
+	{
+		return string1+"  String Is Not Palindrome";
+	}
+}
+</script>
+</head>
+<body>
+
+
+
+
+</body>
+</html>
